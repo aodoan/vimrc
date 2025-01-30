@@ -1,0 +1,42 @@
+set number
+syntax on
+colorscheme slate
+set smartindent
+set showmatch
+set hlsearch
+set showmode
+set showcmd
+set ignorecase
+set nobackup
+set wrap
+set relativenumber
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+hi link fortranTab None
+
+nnoremap <c-a> <esc>ggVG<cr>
+
+"ctrl+g shortcut for :noh
+nnoremap <c-g> <esc>:noh<cr>
+
+nnoremap z u
+nnoremap u <Nop>
+nnoremap <f5> :w <CR>:!python3 % <CR>
+
+nnoremap q <Nop>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap q /
+cabb W w
+cabb Qa qa
+cabb QA qa
+cabb qA qa
+cabb WQ wq
+cabb Wq wq
+cabb wQ wq
+cabb Q q
+
